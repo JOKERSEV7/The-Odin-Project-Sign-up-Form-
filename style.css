@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+}
+
+.background {
+    background: url(background.jpg);
+    background-size: cover;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    padding-top: 120px;
+    background: black;
+    margin-top:100px;
+    padding: 0;
+    opacity: 0.8;
+   
+ 
+    
+}
+.logo {
+    margin-right: 10px;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 15px;
+
+}
+h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+img {
+    width: 70px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.form-container {
+    flex: 2;
+    padding: 20px;
+}

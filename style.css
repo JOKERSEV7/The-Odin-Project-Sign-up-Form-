@@ -44,4 +44,102 @@ img {
 .form-container {
     flex: 2;
     padding: 20px;
+    background: rgb(31, 28, 28);
 }
+
+.main-form {
+    background: rgb(56, 17, 17);
+    overflow:inherit;
+    border-radius: 10px;
+    margin: 0;
+    padding: 30px;
+    
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-column {
+    flex-basis: calc(50% - 10px);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+input {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border:1px solid #a8a770;
+}
+input:active{
+    border: 2px solid rgb(121, 121, 226) ;
+}
+
+
+.footer {
+    border: 5px solid rgb(75, 7, 7);
+    margin-top: 100px;
+    padding: 40px;
+    background: #333131;
+}
+
+
+.button {
+  background: #a31813;
+  border: 1px solid #ac605e;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #cc9290;
+}
+
+.button:active {
+  opacity: .5;
+}
+a {
+    text-decoration: none;
+}
+
+.form-title {
+    text-align:left;
+    margin-bottom: 10%;
+
+}
+
+
+h3 {
+    text-align: right;
+}
+
+  
+  
+  

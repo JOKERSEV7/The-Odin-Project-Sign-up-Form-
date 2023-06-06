@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intiale-scale=1.0">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
 
         <meta name="description" content="A Sign-up Form">
         <meta name="author" content="Sevenj">
@@ -25,34 +25,48 @@
                     <h2>Welcome to the new world with NOLIMITS.</h2>
                 </div>
                 <div class="main-form">
-                    <form>
-                        <h2>Let's do it!</h2>
+                    <form action="#" method="get" id="form-one" >
+                        <h2 class="form-title">Let's do it!</h2>
                         <div class="form-row">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <div class="form-column">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name..">
+                            </div>
+                            <div class="form-column">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name ..">
+                            </div>
                         </div>
                         <div class="form-row">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
-                            <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" name="phone-number">
+                            <div class="form-column">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" placeholder="example@example.ex">
+                            </div>
+                            <div class="form-column">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="tel" id="phone-number" name="phone-number">
+                            </div>
                         </div>
                         <div class="form-row">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
-                            <label for="confirm-pwd">CONFIRM PASWORD</label>
-                            <input type="password" id="confirm-pwd" name="confirm-pwd">
+                            <div class="form-column">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password" required onkeyup="check()">
+                            </div>
+                           <div class="form-column">
+                               <label for="confirm-pwd">CONFIRM PASWORD</label>
+                               <input type="password" id="confirm-pwd" name="confirm-pwd" required onkeyup="check()">
+                               <span id="message"></span>
+                           </div>
+                        </div>
+                        <div class="footer">
+                            <button class="button" type="submit">Create Account</button>
+                            <p>Already have an account? <a href="#">Log in</a>.</p>
                         </div>
                     </form>
-                </div>
-                <div class="footer">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
                 </div>
             </div>
         </div>
         <script src="script.js"></script>
+        <h3>Made by SEVENJ</h3>
     </body>
 </html>
